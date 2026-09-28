@@ -43,7 +43,7 @@ export default function App() {
 
   return (
     <HelmetProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <ScrollToTop />
         
         <div className="min-h-screen flex flex-col bg-soft-gradient text-slate-900 font-sans selection:bg-sky-500 selection:text-white">
