@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary-blue: #0B9BE6;
+    --primary-blue-dark: #0879B7;
+    --primary-blue-light: #E0F2FE;
+    --secondary-orange: #F7941D;
+    --secondary-orange-hover: #E07D0A;
+    --dark-navy: #0F2A43;
+    --dark-navy-light: #1A3B5C;
+    --soft-bg: #F8FBFF;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--dark-navy);
+    background-color: var(--soft-bg);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', 'Poppins', sans-serif;
+  }
+}
+
+/* Custom UI Utilities */
+.glass-header {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(11, 155, 230, 0.1);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(224, 242, 254, 0.8);
+}
+
+/* Light Blue to Pure White to Vivid Amber Card Gradient */
+.card-light-gradient {
+  background: linear-gradient(135deg, #F0F9FF 0%, #FFFFFF 50%, #FFFBEB 100%);
+  box-shadow: 0 4px 20px -2px rgba(14, 165, 233, 0.12), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.card-top-gradient-bar {
+  background: linear-gradient(90deg, #0284C7 0%, #0369A1 45%, #F97316 100%);
+}
+
+.bg-soft-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #E0F2FE 40%, #FEF3C7 100%);
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
+}
+
+.bg-orange-gradient {
+  background: linear-gradient(135deg, #F97316 0%, #EA580C 100%);
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-orange {
+  background: linear-gradient(135deg, #F97316 0%, #EA580C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shadow-glow-blue {
+  box-shadow: 0 10px 30px -5px rgba(2, 132, 199, 0.45);
+}
+
+.shadow-glow-orange {
+  box-shadow: 0 10px 30px -5px rgba(249, 115, 22, 0.5);
+}
+
+/* Dynamic Interactive Background Mesh & Patterns */
+.bg-dynamic-grid {
+  background-image: radial-gradient(rgba(14, 165, 233, 0.18) 1.5px, transparent 1.5px);
+  background-size: 32px 32px;
+  animation: grid-pan 30s linear infinite;
+}
+
+@keyframes grid-pan {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 64px 64px;
+  }
+}
+
+/* Fluid Organic Dynamic Gradient Blobs */
+@keyframes blob-bounce {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(35px, -50px) scale(1.15);
+  }
+  66% {
+    transform: translate(-25px, 20px) scale(0.95);
+  }
+}
+
+@keyframes float-badge {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+}
+
+@keyframes float-badge-reverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(12px) rotate(-2deg);
+  }
+}
+
+.animate-blob-1 {
+  animation: blob-bounce 12s infinite ease-in-out alternate;
+}
+
+.animate-blob-2 {
+  animation: blob-bounce 15s infinite ease-in-out alternate-reverse;
+  animation-delay: 2s;
+}
+
+.animate-blob-3 {
+  animation: blob-bounce 18s infinite ease-in-out alternate;
+  animation-delay: 4s;
+}
+
+.animate-float-badge {
+  animation: float-badge 6s ease-in-out infinite;
+}
+
+.animate-float-badge-reverse {
+  animation: float-badge-reverse 7s ease-in-out infinite;
+}
+
+/* AI Motion Picture Keyframes & Floating Particles */
+@keyframes ai-glow-wave {
+  0% {
+    opacity: 0.4;
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(25px, -15px) scale(1.15);
+  }
+  100% {
+    opacity: 0.4;
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes float-particle {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-22px) rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px) rotate(360deg);
+    opacity: 0.7;
+  }
+}
+
+/* Pulse animation for floating WhatsApp */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.pulse-whatsapp {
+  animation: pulse-ring 2s infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8FBFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0B9BE6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0879B7;
+}
