@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Phone, Search, Menu, X, MessageSquare, ChevronRight, Sparkles } from 'lucide-react';
 import { FacebookIcon, InstagramIcon, YoutubeIcon } from './SocialIcons';
+import { getAssetUrl } from '../utils/url';
 import { siteConfig } from '../data/siteData';
 
 
@@ -30,7 +31,7 @@ export default function Header({ onOpenSearch, onOpenDemoModal }) {
           {/* Brand Logo & Name */}
           <Link to="/" className="flex items-center space-x-3 group">
             <img
-              src="/logo.png"
+              src={getAssetUrl('/logo.png')}
               alt="Samskruthi Academy Logo"
               className="h-10 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform"
             />

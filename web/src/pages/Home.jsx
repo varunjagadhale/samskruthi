@@ -7,6 +7,7 @@ import CourseCard from '../components/CourseCard';
 import TestimonialSlider from '../components/TestimonialSlider';
 import LeadForm from '../components/LeadForm';
 import AnimatedCounter from '../components/AnimatedCounter';
+import { getAssetUrl } from '../utils/url';
 import { siteConfig } from '../data/siteData';
 
 const iconMap = {
@@ -52,7 +53,7 @@ export default function Home({ onOpenDemoModal }) {
             preload="auto"
             className="w-full h-full object-cover opacity-75 filter brightness-115 contrast-110 saturate-125 scale-105"
           >
-            <source src="/hero-bg.mp4" type="video/mp4" />
+            <source src={getAssetUrl('/hero-bg.mp4')} type="video/mp4" />
             Your browser does not support HTML5 video.
           </video>
 

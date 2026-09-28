@@ -88,7 +88,7 @@ export default function About({ onOpenDemoModal }) {
             <div className="lg:col-span-6 relative">
               <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                 <img
-                  src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=800&q=80"
+                  src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80"
                   alt="Samskruthi Academy Mysuru Campus"
                   className="w-full h-96 object-cover"
                 />

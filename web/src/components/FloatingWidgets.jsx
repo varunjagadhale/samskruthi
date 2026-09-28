@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, ArrowUp, X, Send, Sparkles, CheckCircle2 } from 'lucide-react';
 import { WhatsappIcon } from './SocialIcons';
+import { getAssetUrl } from '../utils/url';
 import { siteConfig } from '../data/siteData';
 
 
@@ -61,7 +62,7 @@ export default function FloatingWidgets() {
             <div className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white p-4 flex items-center justify-between">
               <div className="flex items-center space-x-3">
                 <div className="relative">
-                  <img src="/logo.png" alt="Samskruthi Academy" className="w-10 h-10 rounded-full bg-white p-1" />
+                  <img src={getAssetUrl('/logo.png')} alt="Samskruthi Academy" className="w-10 h-10 rounded-full bg-white p-1" />
                   <span className="absolute bottom-0 right-0 w-3 h-3 bg-emerald-400 border-2 border-white rounded-full" />
                 </div>
                 <div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, MessageSquare, ArrowUp, ExternalLink } from 'lucide-react';
 import { FacebookIcon, InstagramIcon, YoutubeIcon } from './SocialIcons';
+import { getAssetUrl } from '../utils/url';
 import { siteConfig } from '../data/siteData';
 
 
@@ -41,7 +42,7 @@ export default function Footer({ onOpenDemoModal }) {
           {/* Col 1: Logo & Brand Info (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
             <Link to="/" className="flex items-center space-x-3 group">
-              <img src="/logo.png" alt="Samskruthi Academy Logo" className="h-12 w-auto bg-white/10 p-1.5 rounded-xl" />
+              <img src={getAssetUrl('/logo.png')} alt="Samskruthi Academy Logo" className="h-12 w-auto bg-white/10 p-1.5 rounded-xl" />
               <div>
                 <span className="text-xl font-extrabold text-white block">Samskruthi Academy</span>
                 <span className="text-xs font-bold text-amber-400 block tracking-wider uppercase">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, MessageSquare, ExternalLink, Clock, Check, Building2 } from 'lucide-react';
+import { getAssetUrl } from '../utils/url';
 
 export default function BranchCard({ branch, onBookDemo }) {
   const whatsappMessage = encodeURIComponent(`Hi Samskruthi Academy, I want to inquire about admissions at ${branch.name}.`);
@@ -14,7 +15,7 @@ export default function BranchCard({ branch, onBookDemo }) {
       <div className="relative h-52 w-full overflow-hidden bg-slate-100">
 
         <img
-          src={branch.image}
+          src={getAssetUrl(branch.image)}
           alt={branch.name}
           className="w-full h-full object-cover filter brightness-110 contrast-105 group-hover:scale-105 transition-all duration-500"
           loading="lazy"

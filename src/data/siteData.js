@@ -313,7 +313,7 @@ export const siteConfig = {
     quote: "Education is not just about marks, it's about mastering concepts for lifelong success",
     author: "Vishwas V.",
     role: "Founder & Managing Director, Samskruthi Academy",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80"
+    image: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=400&q=80"
   },
 
   testimonials: [
@@ -323,7 +323,7 @@ export const siteConfig = {
       role: "Parents of SSLC Topper (98.2%)",
       branch: "Head Office, Mandya",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80",
       quote: "Samskruthi Academy transformed our son's study discipline. The faculty doesn't just teach for marks; they instil strong character and genuine understanding."
     },
     {
@@ -332,7 +332,7 @@ export const siteConfig = {
       role: "KCET Rank 412 Student",
       branch: "5th Branch, Kuvempu Nagar, Mysuru",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80",
+      avatar: "https://images.unsplash.com/photo-1621252179027-94459d278660?auto=format&fit=crop&w=200&q=80",
       quote: "The NEET & KCET coaching at Mysuru Kuvempu Nagar branch is unparalleled. The faculty gives personal attention to every doubt, and weekly CBT mock tests built my exam confidence immensely!"
     },
     {
@@ -341,7 +341,7 @@ export const siteConfig = {
       role: "Parents of Preschooler",
       branch: "Samskruthi International Preschool, Mandya",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+      avatar: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=200&q=80",
       quote: "Sending our daughter to Samskruthi International Preschool was the best decision. She learned to speak fluently and shows immense curiosity every single day!"
     },
     {
@@ -350,7 +350,7 @@ export const siteConfig = {
       role: "Parent of 2nd PUC Student",
       branch: "4th Branch, Chamundeshwari Nagar, Mandya",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+      avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80",
       quote: "Exceptional coaching for 2nd PUC Science! The lecturers at Chamundeshwari Nagar branch are easily accessible and provide excellent notes that helped my son score 96% in PCMB."
     },
     {
@@ -359,7 +359,7 @@ export const siteConfig = {
       role: "Class 9 CBSE Student",
       branch: "2nd Branch, Ashok Nagar, Mandya",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80",
+      avatar: "https://images.unsplash.com/photo-1614023342667-6f060e9d1e04?auto=format&fit=crop&w=200&q=80",
       quote: "Math used to scare me until I joined Samskruthi Academy. The teachers use real-life examples and shortcut tricks. Now Math is my favorite subject!"
     }
   ],
@@ -373,7 +373,7 @@ export const siteConfig = {
       author: "Principal Desk",
       date: "September 15, 2026",
       readTime: "5 min read",
-      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=800&q=80",
       excerpt: "Master time management, conceptual clarity, and strategic revision with these expert-backed tips designed for Karnataka SSLC and PUC students.",
       seoTitle: "10 Study Habits for SSLC & PUC Exams | Samskruthi Academy Blog",
       seoDescription: "Discover how students in Mandya and Mysuru can boost their board exam scores with proven time management and memory retention techniques.",
@@ -413,7 +413,7 @@ Need personalized guidance? Visit any of our 5 branches in Mandya & Mysuru or bo
       author: "Preschool Director",
       date: "August 28, 2026",
       readTime: "4 min read",
-      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80",
       excerpt: "90% of brain development occurs before age 5. Discover how Samskruthi International Preschool fosters curiosity, social skills, and moral values.",
       seoTitle: "Importance of Early Childhood Education | Samskruthi International Preschool Mandya",
       seoDescription: "Learn why early childhood education matters and how Samskruthi International Preschool in Neharu Nagar, Mandya builds a strong foundation.",
@@ -440,7 +440,7 @@ At Samskruthi International Preschool in Neharu Nagar, Mandya, we blend Montesso
       author: "Academic Director",
       date: "August 10, 2026",
       readTime: "6 min read",
-      image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
       excerpt: "Starting competitive exam prep in high school eliminates last-minute stress and builds solid analytical thinking required for NEET & JEE.",
       seoTitle: "NEET & KCET Foundation Classes in Mandya & Mysuru | Samskruthi Academy",
       seoDescription: "Discover how early foundation classes in Class 8, 9 & 10 prepare students for top medical and engineering ranks in NEET, JEE & KCET.",
