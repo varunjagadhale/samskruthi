@@ -28,32 +28,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
 
-      # Check root package.json first, fallback to web/ if present
       - name: Install dependencies
-        run: |
-          if [ -f "package.json" ]; then
-            npm ci
-          else
-            cd web && npm ci
-          fi
+        run: npm install
 
       - name: Build Vite application
-        run: |
-          if [ -f "package.json" ]; then
-            npm run build
-          else
-            cd web && npm run build
-          fi
+        run: npm run build
 
       - name: Copy index.html to 404.html for SPA routing
-        run: |
-          if [ -d "dist" ]; then
-            cp dist/index.html dist/404.html
-          elif [ -d "web/dist" ]; then
-            cp web/dist/index.html web/dist/404.html
-          fi
+        run: cp dist/index.html dist/404.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -61,7 +44,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '${{ hashFiles("dist/index.html") != "" && "./dist" || "./web/dist" }}'
+          path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
